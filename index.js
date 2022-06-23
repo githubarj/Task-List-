@@ -1,15 +1,25 @@
- window.addEventListener('load', ()=>{  /*listens to an event happening on the html*/
+ window.addEventListener('load', ()=>{
+    
+        /*listens to an event happening on the html*/
 
         const form = document.querySelector("#new-task-form");
         const input = document.querySelector("#new-task-input");
         const list_el = document.querySelector('#tasks');
+        var counter=0;
+        
 
         form.addEventListener('submit', (e) => {
+            counter++;
             e.preventDefault(); /* to prevent a reload*/
 
             task = input.value;
+            if (task == ""){
+                alert("Please enter some task");
+            }else {
+            const task = counter+' . '+input.value;
             const task_el = document.createElement('div'); 
             task_el.classList.add('task');
+        
 
             const task_content_el = document.createElement('div');
             task_content_el.classList.add('content');
@@ -60,7 +70,8 @@
 
             task_del_el.addEventListener('click', (e)=>{
                 list_el.removeChild(task_el);
+                counter--;
 
             });
-        });
+        }});
  });
