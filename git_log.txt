@@ -1,0 +1,36 @@
+githu@GitthubaRJ MINGW64 ~/Documents/ICS 4.1/API/Classwork/simpleWeb (main)
+$ touch git_log.txt
+
+githu@GitthubaRJ MINGW64 ~/Documents/ICS 4.1/API/Classwork/simpleWeb (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+        modified:   index.js
+        modified:   style.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+githu@GitthubaRJ MINGW64 ~/Documents/ICS 4.1/API/Classwork/simpleWeb (main)
+$ git add .
+
+githu@GitthubaRJ MINGW64 ~/Documents/ICS 4.1/API/Classwork/simpleWeb (main)
+$ git commit -m "Put null text validatio and numbering"
+[main 99b599d] Put null text validatio and numbering
+ 3 files changed, 17 insertions(+), 7 deletions(-)
+
+githu@GitthubaRJ MINGW64 ~/Documents/ICS 4.1/API/Classwork/simpleWeb (main)
+$ git push origin
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 691 bytes | 691.00 KiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/githubarj/Task-List-.git
+   2bb77be..99b599d  main -> main
